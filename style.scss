@@ -1,5 +1,5 @@
 body {
-    background-color: #414141;
+    background-color: #2d333b;
 }
 
 header {
@@ -8,6 +8,8 @@ header {
     background-color: #ffffff00;
 
     position: fixed;
+
+    z-index: 99;
 
     ul {
         width: 100%;
@@ -30,7 +32,7 @@ header {
 
     p {
         font-size: 1.5em;
-        color: #414141;
+        color: #c9c9c9;
     }
 
     #logo {
@@ -49,5 +51,52 @@ header {
 
     #about {
         grid-column: 4 / 5;
+    }
+}
+
+main {
+    height: 300vh;
+
+    .wrap {
+        overflow: hidden;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+
+        .scroll {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 300vw;
+            will-change: transform;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            div {
+                width: 100vw;
+                height: 100vh;
+
+                text-align: right;
+
+                img {
+                    height: 100%;
+                    width: 60%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    #image1 {
+        height: 100vh;
+    }
+
+    #image2 {
+        height: 100vh;
+    }
+
+    #image3 {
+        height: 100vh;
     }
 }
