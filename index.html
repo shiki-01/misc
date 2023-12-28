@@ -8,45 +8,48 @@
   <meta name="description" content="情報システム部-MISC-のホームページ">
   <link rel="icon" href="https://raw.githubusercontent.com/shiki-01/misc/main/sozai/icon%20light.png">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-  <link rel="stylesheet" href="./misc.css" />
+  <link rel="stylesheet" href="./style/misc.css" />
   <title>MISC</title>
 </head>
 
 <body>
   <header>
     <nav>
-      <ul>
-        <li id="logo"><a href="./index.html"><img
+      <ul class="headerlist">
+        <li id="logo"><a href="#"><img
               src="https://raw.githubusercontent.com/shiki-01/misc/main/sozai/icon.png" alt="logo"></a></li>
-        <li id="article"><a href="#article"><p>article</p></a></li>
-        <li id="about"><a href="#about"><p>about</p></a></li>
+        <li id="article" class="l-nav-anchor__list-col anchor"><a href="#panel02" class="l-nav-anchor__list-item" onclick="goTo()">article</a></li>
+        <li id="about" class="l-nav-anchor__list-col anchor"><a href="#panel03" class="l-nav-anchor__list-item">about</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <div class="wrap">
-      <div class="scroll">
-        <div id="content1">
-          <div class="content">ここは情報システム部</div>
-          <div class="image"><img src="https://www.meiden.ed.jp/content/wp-content/uploads/detail_image01-26.jpg" alt="img"></div>
-        </div>
-        <div id="content2">
-          <div class="image"><img src="https://www.meiden.ed.jp/content/wp-content/uploads/detail_image02-26.jpg" alt="img"></div>
-          <div class="content"></div>
-        </div>
-        <div id="content3">
-          <div class="image"><img src="https://www.meiden.ed.jp/content/wp-content/uploads/detail_image03-26.jpg" alt="img"></div>
-          <div class="content"></div>
+    <div class="l-hero">
+			<div class="l-hero">
+        <div class="l-hero-wrapper" id="wrapper">
+          <div class="l-hero-panel l-hero-panel-01 panel" id="panel01">
+            <p class="l-hero-panel__contents">Panel 1/4</p>
+          </div>
+          <div class="l-hero-panel l-hero-panel-02 panel" id="panel02">
+            <p class="l-hero-panel__contents">Panel 2/4</p>
+          </div>
+          <div class="l-hero-panel l-hero-panel-03 panel" id="panel03">
+            <p class="l-hero-panel__contents">Panel 3/4</p>
+          </div>
         </div>
       </div>
-    </div>
   </main>
   <footer>
 
   </footer>
+
+  <!--/this page powered by GSAP/ -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
+  <script defer src="./index.js"></script>
+
 </body>
 
 </html>
-
-<script type='text/javascript' defer src="./index.js"></script>

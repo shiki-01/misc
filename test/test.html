@@ -1,29 +1,88 @@
-<!DOCTYPE html>
-<html>
 <head>
-    <meta charset="utf-8">
-    <title>HTML, CSS, JSのプログラム</title>
-    <link rel="stylesheet" href="test.css">
+    <style>
+        header {
+  position: fixed;
+  top: 1.2rem;
+  left: 1.2rem;
+}
+
+header h1 {
+  line-height: 1;
+}
+
+main {
+  width: 100vw;
+  width: 100dvw;
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  flex-direction: row;
+  border: 8px solid rgb(180, 180, 180);
+  overflow-x: scroll;
+
+  -ms-overflow-style: none; /* Hide Scrollbar (IE, Microsoft Edge) */
+  scrollbar-width: none; /* Hide Scrollbar (Firefox) */
+}
+
+main::-webkit-scrollbar { /* Hide Scrollbar (Google Chrome, Safari) */
+  display: none;
+}
+
+.contents-block {
+  width: 100vw;
+  width: 100dvw;
+  height: 100%;
+  padding: 4rem;
+  overflow-y: scroll;
+}
+
+#s1 {
+  background-color: rgb(255, 200, 200);
+}
+
+#s2 {
+  background-color: rgb(200, 255, 200);
+}
+
+#s3 {
+  background-color: rgb(200, 200, 255);
+}
+
+footer {
+  position: fixed;
+  bottom: 1.2rem;
+  right: 1.2rem;
+  line-height: 1;
+}
+
+    </style>
 </head>
-<body>
-    <div class="container">
-        <div class="content">
-            <div class="image">
-                <img src="https://www.meiden.ed.jp/content/wp-content/uploads/detail_image01-26.jpg" alt="画像1">
-            </div>
-            <div class="text">
-                <p>これは画像1の説明です。ここにテキストを書きます。</p>
-            </div>
-        </div>
-        <div class="content">
-            <div class="image">
-                <img src="https://www.meiden.ed.jp/content/wp-content/uploads/detail_image01-26.jpg" alt="画像2">
-            </div>
-            <div class="text">
-                <p>これは画像2の説明です。ここにテキストを書きます。</p>
-            </div>
-        </div>
-    </div>
-    <script src="test.js"></script>
-</body>
-</html>
+<header>
+    <h1>Horizontal Scrolling Website</h1>
+  </header>
+  
+  <main>
+  
+    <section id="s1" class="section-conts">
+      <div class="contents-block">
+        <h2>section 1</h2>
+      </div>
+    </section>
+  
+    <section id="s2" class="section-conts">
+      <div class="contents-block">
+        <h2>section 2</h2>
+      </div>
+    </section>
+  
+    <section id="s3" class="section-conts">
+      <div class="contents-block">
+        <h2>section 3</h2>
+      </div>
+    </section>
+  
+  </main>
+  
+  <footer>
+    <p>Author: AKIRA</p>
+  </footer>
