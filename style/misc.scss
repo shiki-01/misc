@@ -120,10 +120,10 @@ main {
 
         width: 100%;
         max-width: 740px;
-        height: 600px;
+        height: 700px;
         text-align: center;
         margin: 0 auto 0;
-        background-color: #c1c1c1;
+        background-color: #cddddd;
 
         border-radius: 10px;
 
@@ -133,19 +133,20 @@ main {
 
         .tab {
 
-            color: #fff;
+            color: #cddddd;
             font-size: 1.6rem;
             letter-spacing: 0.09em;
             line-height: 50px;
             text-align: center;
             vertical-align: middle;
-            background: #c1c1c1;
+            background: #3f4949;
             transition: all 0.3s ease-in-out;
             display: inline-block;
             cursor: pointer;
 
             &:hover {
-                background: #000;
+                color: #3f4949;
+                background: #cddddd;
             }
         }
 
@@ -180,7 +181,8 @@ main {
 
         input:checked+.tab {
 
-            background: #000
+            color: #3f4949;
+            background: #cddddd;
         }
     }
 }
