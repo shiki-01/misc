@@ -57,18 +57,20 @@ main {
     width: 100%;
     height: 100%;
 
-    
-    .l-hero {
+
+    .container {
         overflow: hidden;
         position: relative;
-        .l-hero-wrapper {
+
+        #wrapper {
             width: 300%;
             height: 100vh;
             display: flex;
             flex-wrap: nowrap;
             will-change: auto;
         }
-        .l-hero-panel {
+
+        .contents {
             width: 100%;
             height: 100%;
             display: flex;
@@ -78,18 +80,19 @@ main {
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
+
             &-01 {
-                background-image: url('https://source.unsplash.com/KU1DYLV3tQE');
+                background-image: url('https://www.meiden.ed.jp/content/wp-content/uploads/detail_image01-26.jpg');
             }
+
             &-02 {
-                background-image: url('https://source.unsplash.com/RfH5sOHTOek');
+                background-image: url('https://www.meiden.ed.jp/content/wp-content/uploads/detail_image02-26.jpg');
             }
+
             &-03 {
-                background-image: url('https://source.unsplash.com/uOcQUMXaUz8');
+                background-image: url('https://www.meiden.ed.jp/content/wp-content/uploads/detail_image03-26.jpg');
             }
-            &-04 {
-                background-image: url('https://source.unsplash.com/aYLTPUkGZ-8');
-            }
+
             &::after {
                 content: '';
                 width: 100%;
@@ -101,7 +104,8 @@ main {
                 background-color: rgba(#000, .25);
             }
         }
-        .l-hero-panel__contents {
+
+        .content {
             flex: 0 0 100%;
             text-align: center;
             font-weight: 700;

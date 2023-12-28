@@ -48,18 +48,18 @@ main {
   width: 100%;
   height: 100%;
 }
-main .l-hero {
+main .container {
   overflow: hidden;
   position: relative;
 }
-main .l-hero .l-hero-wrapper {
+main .container #wrapper {
   width: 300%;
   height: 100vh;
   display: flex;
   flex-wrap: nowrap;
   will-change: auto;
 }
-main .l-hero .l-hero-panel {
+main .container .contents {
   width: 100%;
   height: 100%;
   display: flex;
@@ -70,19 +70,16 @@ main .l-hero .l-hero-panel {
   background-position: center center;
   background-repeat: no-repeat;
 }
-main .l-hero .l-hero-panel-01 {
-  background-image: url("https://source.unsplash.com/KU1DYLV3tQE");
+main .container .contents-01 {
+  background-image: url("https://www.meiden.ed.jp/content/wp-content/uploads/detail_image01-26.jpg");
 }
-main .l-hero .l-hero-panel-02 {
-  background-image: url("https://source.unsplash.com/RfH5sOHTOek");
+main .container .contents-02 {
+  background-image: url("https://www.meiden.ed.jp/content/wp-content/uploads/detail_image02-26.jpg");
 }
-main .l-hero .l-hero-panel-03 {
-  background-image: url("https://source.unsplash.com/uOcQUMXaUz8");
+main .container .contents-03 {
+  background-image: url("https://www.meiden.ed.jp/content/wp-content/uploads/detail_image03-26.jpg");
 }
-main .l-hero .l-hero-panel-04 {
-  background-image: url("https://source.unsplash.com/aYLTPUkGZ-8");
-}
-main .l-hero .l-hero-panel::after {
+main .container .contents::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -92,7 +89,7 @@ main .l-hero .l-hero-panel::after {
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.25);
 }
-main .l-hero .l-hero-panel__contents {
+main .container .content {
   flex: 0 0 100%;
   text-align: center;
   font-weight: 700;
