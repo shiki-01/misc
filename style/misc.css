@@ -97,4 +97,53 @@ main .container .content {
   font-size: 36px;
   position: relative;
   z-index: 3;
+}
+main .articlePage {
+  width: 100%;
+  max-width: 740px;
+  height: 600px;
+  text-align: center;
+  margin: 0 auto 0;
+  background-color: #c1c1c1;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 80px;
+  grid-template-columns: 1fr 1fr;
+}
+main .articlePage .tab {
+  color: #fff;
+  font-size: 1.6rem;
+  letter-spacing: 0.09em;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  background: #c1c1c1;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  cursor: pointer;
+}
+main .articlePage .tab:hover {
+  background: #000;
+}
+main .articlePage input[name=tab] {
+  display: none;
+}
+main .articlePage .tabContent {
+  width: 100%;
+  max-width: 740px;
+  text-align: left;
+  margin-top: 60px;
+  display: none;
+  overflow: hidden;
+}
+main .articlePage #newArticle + label,
+main .articlePage #allArticle + label {
+  margin-left: 0px;
+}
+main .articlePage #newArticle:checked ~ #newContent,
+main .articlePage #allArticle:checked ~ #allContent {
+  display: block;
+}
+main .articlePage input:checked + .tab {
+  background: #000;
 }/*# sourceMappingURL=misc.css.map */

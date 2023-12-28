@@ -16,28 +16,41 @@
   <header>
     <nav>
       <ul class="headerlist">
-        <li id="logo"><a href="#"><img
-              src="https://raw.githubusercontent.com/shiki-01/misc/main/sozai/icon.png" alt="logo"></a></li>
-        <li id="article" class="anchor"><a href="#page2">article</a></li>
-        <li id="about" class="anchor"><a href="#page3">about</a></li>
+        <li id="logo"><a href="#"><img src="https://raw.githubusercontent.com/shiki-01/misc/main/sozai/icon.png"
+              alt="logo"></a></li>
+        <li id="article" class="anchor"><a href="#page2">about</a></li>
+        <li id="about" class="anchor"><a href="#page3">article</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-			<div class="container">
-        <div id="wrapper">
-          <div class="contents contents-01" id="page1">
-            <p class="content">Panel 1/4</p>
-          </div>
-          <div class="contents contents-02" id="page2">
-            <p class="content">Panel 2/4</p>
-          </div>
-          <div class="contents contents-03" id="page3">
-            <p class="content">Panel 3/4</p>
+    <div class="container">
+      <div id="wrapper">
+        <div class="contents contents-01" id="page1">
+          <div class="content">Panel 1/4</div>
+        </div>
+        <div class="contents contents-02" id="page2">
+          <div class="content">Panel 2/4</div>
+        </div>
+        <div class="contents contents-03" id="page3">
+          <div class="content">
+            <div class="articlePage">
+                <input id="newArticle" type="radio" name="tab" checked>
+                <label class="tab" for="newArticle">NEW ARTICLE</label>
+                <input id="allArticle" type="radio" name="tab">
+                <label class="tab" for="allArticle">ALL ARTICLE</label>
+                <div class="tabContent" id="newContent">
+                  ～ここにランチの内容を記述します～
+                </div>
+                <div class="tabContent" id="allContent">
+                  ～ここにディナーの内容を記述します～
+                </div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
   </main>
   <footer>
 
