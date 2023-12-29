@@ -157,11 +157,18 @@ main .articlePage .newWrapping {
 }
 main .articlePage .newWrap {
   display: grid;
+  grid-template-rows: 50px 1fr;
   grid-template-columns: 250px 1fr;
 }
 main .articlePage .newWrap .newImage {
+  grid-row: 1/3;
   grid-column: 1/2;
   font-size: 0.5em;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .articlePage .newWrap .newTitle {
   grid-column: 2/3;
@@ -169,6 +176,11 @@ main .articlePage .newWrap .newTitle {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding: 10px;
+}
+main .articlePage .newWrap .newBody {
+  font-size: 0.5em;
+  padding: 10px;
 }
 main .articlePage .newWrap1 {
   grid-row: 1/2;
