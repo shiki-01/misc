@@ -1,4 +1,5 @@
-fetch('https://raw.githubusercontent.com/shiki-01/misc/main/json/articleList.json')
+
+    fetch('https://raw.githubusercontent.com/shiki-01/misc/main/json/articleList.json')
     .then(result => result.json())
     .then((output) => {
 
@@ -32,9 +33,8 @@ fetch('https://raw.githubusercontent.com/shiki-01/misc/main/json/articleList.jso
 
             for (let i = 0; i < 4; i++) {
                 const element = document.querySelector("#newWrap" + (i + 1));
-                console.log('<span class="newImage">' + articleList[i].mainImage + '</span><span class="newTitle">' + articleList[i].title + '</span>' , element)
-                const createElement = '<span class="newImage">' + articleList[i].mainImage + '</span><span class="newTitle">' + articleList[i].title + '</span>';
-                document.getElementById(document.querySelector("#newWrap" + (i + 1))).innerHTML = '<span class="newImage">' + articleList[i].mainImage + '</span><span class="newTitle">' + articleList[i].title + '</span>';
+                const createElement = '<img class="newImage" src="' + articleList[i].mainImage + '" alt="mainImage"><span class="newTitle">' + articleList[i].title + '</span>';
+                element.innerHTML = createElement;
             }
         });
     })
