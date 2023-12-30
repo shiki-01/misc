@@ -32,8 +32,14 @@ fetch('https://raw.githubusercontent.com/shiki-01/misc/main/json/articleList.jso
 
             for (let i = 0; i < 4; i++) {
                 const element = document.querySelector("#newWrap" + (i + 1));
-                const createElement = '<span class="imageWrap"><img class="newImage" src="' + articleList[i].mainImage + '" alt="mainImage"></span><span class="newTitle">' + articleList[i].title + '</span><span class="newBody">' + articleList[i].content.substring(0,80) + '…</span>';
+                const createElement = '<span class="imageWrap"><img class="newImage" src="' + articleList[i].mainImage + '" alt="mainImage"></span><span class="newTitle">' + articleList[i].title + '</span><span class="newTags"></span><span class="newBody">' + articleList[i].content.substring(0,80) + '…</span>';
                 element.innerHTML = createElement;
+
+                for (let ii = 0; ii < articleList[i].tag.length; ii++) {
+                    const elementTag = document.querySelector("#newWrap" + (i + 1) + " > .newTags");
+                    const createElementTag = '<span class="tag">#' + articleList[i].tag[ii] + '<span>';
+                    elementTag.insertAdjacentHTML("beforeend" , createElementTag);
+                }
             }
         });
     })
