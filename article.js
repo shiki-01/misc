@@ -53,8 +53,6 @@ fetch('https://raw.githubusercontent.com/shiki-01/misc/main/json/articleList.jso
                     }
                 }
 
-                console.log(j);
-                j=2;
                 element.style.gridTemplateRows = 'repeat(${j+1}, 240px)' ;
 
                 element.insertAdjacentHTML('beforeend', createElement);
