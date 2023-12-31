@@ -35,7 +35,7 @@ fetch('https://raw.githubusercontent.com/shiki-01/misc/main/json/articleList.jso
             console.log(num);
 
             for (let i = 0; i < list.length; i++) {
-                //const element = document.querySelector(".allWrapping");
+                const element = document.querySelector(".allWrapping");
                 //const createElement = '<span class="imageWrap"><img class="newImage" src="' + articleList[num].mainImage + '" alt="' + list[num] + '"></span><span class="newTitle">' + articleList[num].title + '</span><span class="newTags"></span><span class="newBody">' + articleList[num].content.substring(0, 80) + '…</span>';
                 //element.innerHTML = createElement;
 
@@ -43,6 +43,7 @@ fetch('https://raw.githubusercontent.com/shiki-01/misc/main/json/articleList.jso
                     const createElement = '<div class="allWrap ' + list[num] + ' allWrap' + (ii + 1) + '" id="allWrap' + (i + 1) + '"><span class="imageWrap"><img class="allImage" src="' + articleList[ii].mainImage + '" alt="' + list[num] + '"></span><span class="allTags"></span><span class="allTitle">' + articleList[ii].title + '</span>';
                     console.log(createElement);
                     i += 1;
+                    element.innerHTML = createElement;
                 }
             }
 
