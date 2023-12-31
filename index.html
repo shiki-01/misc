@@ -11,13 +11,13 @@
   <link rel="stylesheet" href="./style/misc.css" />
   <title>MISC</title>
   <script>
-    (function(d) {
+    (function (d) {
       var config = {
         kitId: 'ryq2ohd',
         scriptTimeout: 3000,
         async: true
       },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
 </head>
@@ -47,9 +47,13 @@
           <div class="content">
             <div class="articlePage">
               <input id="newArticle" type="radio" name="tab" checked>
-              <label class="tab" for="newArticle"><div>NEW ARTICLE</div></label>
+              <label class="tab" for="newArticle">
+                <div>NEW ARTICLE</div>
+              </label>
               <input id="allArticle" type="radio" name="tab">
-              <label class="tab" for="allArticle"><div>ALL ARTICLE</div></label>
+              <label class="tab" for="allArticle">
+                <div>ALL ARTICLE</div>
+              </label>
               <div class="tabContent" id="newContent">
                 <div class="newWrapping">
                   <div class="newWrap" id="newWrap1"></div>
@@ -58,12 +62,53 @@
                 </div>
               </div>
               <div class="tabContent" id="allContent">
+                <div class="allWrapping">
+                  <div class="allWrap 2023-12-29" id="allWrap1">
+                    <span class="imageWrap">
+                      <img class="allImage" src="https://placehold.jp/300x200.png" alt="2023-12-29">
+                    </span>
+                    <span class="allTags">
+                      <span class="tag">#info</span>
+                      <span class="tag">#1st</span>
+                    </span>
+                    <span class="allTitle">てすとあーてぃくる！1</span>
+                  </div>
+                  <div class="allWrap 2023-12-29" id="allWrap2">
+                    <span class="imageWrap">
+                      <img class="allImage" src="https://placehold.jp/300x200.png" alt="2023-12-29">
+                    </span>
+                    <span class="allTags">
+                      <span class="tag">#info</span>
+                      <span class="tag">#1st</span>
+                    </span>
+                    <span class="allTitle">てすとあーてぃくる！2</span>
+                  </div>
+                  <div class="allWrap 2023-12-29" id="allWrap3">
+                    <span class="imageWrap">
+                      <img class="allImage" src="https://placehold.jp/300x200.png" alt="2023-12-29">
+                    </span>
+                    <span class="allTags">
+                      <span class="tag">#info</span>
+                      <span class="tag">#1st</span>
+                    </span>
+                    <span class="allTitle">てすとあーてぃくる！3</span>
+                  </div>
+                  <div class="allWrap 2023-12-29" id="allWrap4">
+                    <span class="imageWrap">
+                      <img class="allImage" src="https://placehold.jp/300x200.png" alt="2023-12-29">
+                    </span>
+                    <span class="allTags">
+                      <span class="tag">#info</span>
+                      <span class="tag">#1st</span>
+                    </span>
+                    <span class="allTitle">てすとあーてぃくる！4</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </main>
   <footer>
 
