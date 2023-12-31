@@ -47,7 +47,7 @@ fetch('https://raw.githubusercontent.com/shiki-01/misc/main/json/articleList.jso
                     }
                 } else {
                     for (let ii = 0; i < list.length; ii++) {
-                        createElement += '<div class="allWrap ' + list[num] + ' allWrap' + (ii + 1) + '" id="allWrap' + (i + 1) + '"><span class="imageWrap"><img class="allImage" src="' + articleList[num - 1].mainImage + '" alt="' + list[num] + '"></span><span class="allDate"></span><span class="allTitle">' + articleList[num - 1].title + '</span></div>';
+                        createElement += '<div class="allWrap ' + list[num] + ' allWrap' + (ii + 1) + '" id="allWrap' + (i + 1) + '"><span class="imageWrap"><img class="allImage" src="' + articleList[num].mainImage + '" alt="' + list[num] + '"></span><span class="allDate"></span><span class="allTitle">' + articleList[num].title + '</span></div>';
                         i += 1;
                         num += 1;
                     }
