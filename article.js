@@ -41,13 +41,13 @@ fetch('https://raw.githubusercontent.com/shiki-01/misc/main/json/articleList.jso
 
                 if (i + 3 < list.length){
                     for (let ii = 0; ii < 3; ii++) {
-                        createElement += '<div class="allWrap ' + list[num] + ' allWrap' + (ii + 1) + '" id="allWrap' + (i + 1) + '"><span class="imageWrap"><img class="allImage" src="' + articleList[num].mainImage + '" alt="' + list[num] + '"></span><span class="allTags"></span><span class="allTitle">' + articleList[num].title + '</span></div>';
+                        createElement += '<div class="allWrap ' + list[num] + ' allWrap' + (ii + 1) + '" id="allWrap' + (i + 1) + '"><span class="imageWrap"><img class="allImage" src="' + articleList[num].mainImage + '" alt="' + list[num] + '"></span><span class="allDate"></span><span class="allTitle">' + articleList[num].title + '</span></div>';
                         i += 1;
                         num += 1;
                     }
                 } else {
                     for (let ii = 0; i < list.length; ii++) {
-                        createElement += '<div class="allWrap ' + list[num] + ' allWrap' + (ii + 1) + '" id="allWrap' + (i + 1) + '"><span class="imageWrap"><img class="allImage" src="' + articleList[num - 1].mainImage + '" alt="' + list[num] + '"></span><span class="allTags"></span><span class="allTitle">' + articleList[num - 1].title + '</span></div>';
+                        createElement += '<div class="allWrap ' + list[num] + ' allWrap' + (ii + 1) + '" id="allWrap' + (i + 1) + '"><span class="imageWrap"><img class="allImage" src="' + articleList[num - 1].mainImage + '" alt="' + list[num] + '"></span><span class="allDate"></span><span class="allTitle">' + articleList[num - 1].title + '</span></div>';
                         i += 1;
                         num += 1;
                     }
