@@ -8,7 +8,8 @@ class scrollHorizontal {
 	}
 	init() {
 		const wrapper = document.querySelector(this.wrapper);
-		if(wrapper) {			const panels = gsap.utils.toArray(this.panel);
+		if(wrapper) {
+			const panels = gsap.utils.toArray(this.panel);
 			const wrapperWidth = wrapper.offsetWidth;
 			gsap.to( panels, {
 				xPercent: -100 * (panels.length - 1),
