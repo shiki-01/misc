@@ -2158,12 +2158,24 @@ main {
         }
     }
 
-    #page1 {
+    #page1 , #page2 {
         .content {
             font-family: "m-plus-2p", sans-serif;
             font-weight: 100;
             font-style: normal;
             font-size: 3em;
+        }
+    }
+
+    #page2 {
+        .page2Wrap {
+            text-align: center;
+            width: 50%;
+
+            div {
+                font-size: 1.2em;
+                color: #eee;
+            }
         }
     }
 

@@ -973,11 +973,19 @@ main .container .content {
   position: relative;
   z-index: 3;
 }
-main #page1 .content {
+main #page1 .content, main #page2 .content {
   font-family: "m-plus-2p", sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 3em;
+}
+main #page2 .page2Wrap {
+  text-align: center;
+  width: 50%;
+}
+main #page2 .page2Wrap div {
+  font-size: 1.2em;
+  color: #eee;
 }
 main .articlePage {
   width: 100%;
