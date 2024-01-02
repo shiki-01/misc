@@ -990,10 +990,11 @@ main #page2 .page2Wrap div {
 main .articlePage {
   width: 100%;
   max-width: 740px;
-  height: 700px;
+  height: 650px;
   text-align: center;
   margin: 0 auto 0;
   margin-top: 80px;
+  margin-bottom: 20px;
   background-color: rgba(101, 147, 166, 0.5);
   border: #6593A6 solid 4px;
   border-radius: 10px;
@@ -1076,7 +1077,7 @@ main .articlePage #newWrap3 {
 main .articlePage #newWrap1, main .articlePage #newWrap2, main .articlePage #newWrap3 {
   grid-column: 1/2;
   display: grid;
-  grid-template-rows: 35px 25px 1fr;
+  grid-template-rows: 35px 15px 1fr;
   grid-template-columns: 250px 1fr;
   gap: 10px;
 }
